@@ -3,11 +3,12 @@ def finalVal():
     extraCandies = 3
 
     maxInCandies = max(candies)
-    rest= [False]*(len(candies))
+    rest = [False] * (len(candies))
     for i in range(len(candies)):
-        if((candies[i] + extraCandies) > maxInCandies):
-            rest[i]= True
+        if (candies[i] + extraCandies) > maxInCandies:
+            rest[i] = True
     return rest
+
 
 if __name__ == '__main__':
     print(finalVal())
