@@ -1,4 +1,4 @@
-from src.OderedStream import OrderedStream
+from src.leetcode.OderedStream import OrderedStream
 
 
 def finalVal():
