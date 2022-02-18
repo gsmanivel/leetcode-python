@@ -45,5 +45,17 @@ def coding3():
     return []
 
 
+def coding4():
+    array = [3, 11, -4, -1, 5, 1, 8, 6]  # [3, 5, -4, 8, 10, 1, -1, 6, 7]  # [3, 5, -4, 8, 11, 1, -1, 6]
+    targetSum = 10
+    length = len(array)
+    for i in range(length):
+        currentNum = array.pop()
+        potentialMatch = targetSum - currentNum
+        if potentialMatch in array:
+            return [potentialMatch, currentNum]
+    return []
+
+
 if __name__ == '__main__':
-    print(coding3())
+    print(coding4())
