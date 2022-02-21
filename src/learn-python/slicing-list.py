@@ -21,6 +21,7 @@ def slicingList():
     # Reverse using slicing
     reversed_letters = letterList[::-1]
     print('Reversed List-', reversed_letters)
+    
 
 
 if __name__ == '__main__':
